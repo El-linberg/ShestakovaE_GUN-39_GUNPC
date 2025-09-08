@@ -3,17 +3,20 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Write("Введите первое число: ");
         if (!Int32.TryParse(Console.ReadLine(), out var a))
         {
             Console.WriteLine("Not a number");
             return;
         }
+        Console.Write("Введите второе число: ");
         if (!Int32.TryParse(Console.ReadLine(), out var b))
         {
             Console.WriteLine("Not a number");
             return;
         }
 
+        Console.Write("Введите оператор * / + - или ^ : ");
         var s = Console.ReadLine();
         var boolVar = true;
         if (s.Length == 0 || s.Length > 1 && !boolVar)
