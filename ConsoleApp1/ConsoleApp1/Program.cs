@@ -16,7 +16,7 @@ class Program
             return;
         }
 
-        Console.Write("Введите оператор * / + - или ^ : ");
+        Console.Write("Введите оператор & | или ^ : ");
         var s = Console.ReadLine();
         var boolVar = true;
         if (s.Length == 0 || s.Length > 1 && !boolVar)
@@ -24,20 +24,34 @@ class Program
             Console.WriteLine("Wrong sign");
             return;
         }
+        int result;
         switch (s[0])
         {
-            case '+':
-                Console.WriteLine("Result of {0} + {1} = {2}", a, b, a + b);
+            //case '+':
+            //    Console.WriteLine("Result of {0} + {1} = {2}", a, b, a + b);
+            //    break;
+            //case '-':
+            //    Console.WriteLine("Result of {0} - {1} = {2}", a, b, a - b);
+            //    break;
+            case '&':
+                result = a & b;
+                Console.WriteLine(Convert.ToString(result, toBase: 2));
+                Console.WriteLine(Convert.ToString(result, toBase: 10));
+                Console.WriteLine(Convert.ToString(result, toBase: 16));
                 break;
-            case '-':
-                Console.WriteLine("Result of {0} - {1} = {2}", a, b, a - b);
+            case '|':
+                result = a | b;
+                Console.WriteLine(Convert.ToString(result, toBase: 2));
+                Console.WriteLine(Convert.ToString(result, toBase: 10));
+                Console.WriteLine(Convert.ToString(result, toBase: 16));
                 break;
-            case '*':
-                Console.WriteLine("Result of {0} * {1} = {2}", a, b, a * b);
+            case '^':
+                result = a ^ b;
+                Console.WriteLine(Convert.ToString(result, toBase: 2));
+                Console.WriteLine(Convert.ToString(result, toBase: 10));
+                Console.WriteLine(Convert.ToString(result, toBase: 16));
                 break;
-            case '/':
-                Console.WriteLine("Result of {0} / {1} = {2}", a, b, a / b);
-                break;
+
             default:
                 Console.WriteLine("Wrong sign");
                 break;
