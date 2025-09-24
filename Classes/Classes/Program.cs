@@ -3,11 +3,10 @@
     class Unit
     {
         private float _health;
-        private float _armor;
         public string Name { get; }
         public float Health => _health;
 
-        public int Damage { get; }
+        public int Damage { get; } = 5;
 
 
         public Unit() : this(name: "Unknown Unit")
@@ -23,40 +22,19 @@
             return Health * (1 + Armor);
         }
 
-        public float Armor
-        {
-            get
-            {
-
-                return (float) Math.Round(_armor, 2);
-            }
-            set
-            {
-                if (value >= 0 || value <= 1)
-                {
-                    _armor = value;
-                }
-                else
-                {
-
-                }
-            }
-
-        }
-
-        public Unit(int damage)
-        {
-            Damage = 5;
-        }
+        public float Armor { get; private set; } = 0.6f;
+       
 
         public bool SetDamage()
         {
             _health = Health - Damage * Armor;
-            {
-                if (Health <= 0f) return true;
-                else return false;
+            
+                if (Health <= 0f) 
+                return true;
+                else 
+                return false;
 
-            }
+            
         }
     }
 }
