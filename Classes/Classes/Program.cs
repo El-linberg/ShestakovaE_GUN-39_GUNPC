@@ -1,4 +1,6 @@
-﻿namespace Classes
+﻿using System.ComponentModel.Design;
+
+namespace Classes
 {
     class Unit
     {
@@ -37,4 +39,37 @@
             
         }
     }
-}
+    class Weapon
+    {
+        private string name;
+        public string Name
+        {
+            get;
+        }
+
+        public int MinDamage { get; private set; }
+
+        public int MaxDamage { get; private set; }
+        public float Durability { get; } = 1f;
+
+        public Weapon()
+        {
+           name = (Console.ReadLine());
+
+        }
+        public int SetDamageParams()
+            
+        {
+            MaxDamage = (Console.ReadLine());
+            MinDamage = (Console.ReadLine());
+            if (MinDamage > MaxDamage)
+
+                return 0;
+
+            else
+                return 0;
+
+
+        }
+    }
+    }

@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D0AF936C-ABAC-4EEC-92D5-DF16B268E8C1}|Classes\\Classes.csproj|c:\\users\\igork\\source\\repos\\practic\\shestakovae_gun-39_gunpc\\classes\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0AF936C-ABAC-4EEC-92D5-DF16B268E8C1}|Classes\\Classes.csproj|solutionrelative:classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0AF936C-ABAC-4EEC-92D5-DF16B268E8C1}|Classes\\Classes.csproj|c:\\users\\igork\\source\\repos\\practic\\shestakovae_gun-39_gunpc\\classes\\classes\\classes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D0AF936C-ABAC-4EEC-92D5-DF16B268E8C1}|Classes\\Classes.csproj|solutionrelative:classes\\classes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Classes",
+              "DocumentMoniker": "C:\\Users\\Igork\\source\\repos\\Practic\\ShestakovaE_GUN-39_GUNPC\\Classes\\Classes\\Classes.csproj",
+              "RelativeDocumentMoniker": "Classes\\Classes.csproj",
+              "ToolTip": "C:\\Users\\Igork\\source\\repos\\Practic\\ShestakovaE_GUN-39_GUNPC\\Classes\\Classes\\Classes.csproj",
+              "RelativeToolTip": "Classes\\Classes.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-24T16:35:08.729Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +40,7 @@
               "RelativeDocumentMoniker": "Classes\\Program.cs",
               "ToolTip": "C:\\Users\\Igork\\source\\repos\\Practic\\ShestakovaE_GUN-39_GUNPC\\Classes\\Classes\\Program.cs",
               "RelativeToolTip": "Classes\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBgAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwD8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-23T14:45:53.483Z",
               "EditorCaption": ""
