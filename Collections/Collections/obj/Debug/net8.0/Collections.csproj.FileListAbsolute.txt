@@ -1,0 +1,15 @@
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.AssemblyInfoInputs.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.AssemblyInfo.cs
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.csproj.CoreCompileInputs.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.sourcelink.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\bin\Debug\net8.0\Collections.exe
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\bin\Debug\net8.0\Collections.deps.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\bin\Debug\net8.0\Collections.runtimeconfig.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\bin\Debug\net8.0\Collections.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\bin\Debug\net8.0\Collections.pdb
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\refint\Collections.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.pdb
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\Collections.genruntimeconfig.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Collections\Collections\obj\Debug\net8.0\ref\Collections.dll
