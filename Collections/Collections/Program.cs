@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics;
@@ -25,17 +26,40 @@ namespace HomeWork
                 {
                     Console.Write("\nВведите новую строку для добавления в конец списка (Для выхода введите exit): ");
                     string newItem = Console.ReadLine();
-
-                    if (newItem != "exit")
-                    {   
+                    if (string.IsNullOrEmpty(newItem))
+                    {
+                        Console.WriteLine("\nСтрока не может быть пустой");
+                        break;
+                    }
+                    if (newItem == "exit")
+                    {
+                        Console.WriteLine("Выполнение программы прервано.");
+                        break;
+                    }
+                    else
+                    {
                         _listOfInts.Add(newItem);
                         Console.WriteLine("\nСписок после добавления новой строки:");
                         PrintList(_listOfInts);
                     }
-                    else
+                    Console.Write("\nВведите новую строку для добавления в середину списка (Для выхода введите exit): ");
+                    string newItem1 = Console.ReadLine();
+                    if (string.IsNullOrEmpty(newItem1))
+                    {
+                        Console.WriteLine("\nСтрока не может быть пустой");
+                        break;
+                    }
+                    if (newItem1 == "exit")
                     {
                         Console.WriteLine("Выполнение программы прервано.");
                         break;
+                    }
+                    else
+                    {
+                        int middle = _listOfInts.Count/2;
+                        _listOfInts.Insert(middle,newItem1);
+                        Console.WriteLine("\nСписок после добавления новой строки:");
+                        PrintList(_listOfInts);
                     }
                 }
             }
@@ -47,30 +71,18 @@ namespace HomeWork
                 }
             }
         }
-            private class LinkedListTask
+        private class LinkedListTask
         {
-            private class Node 
+
+            public Dictionary< string, int> Students = new Dictionary<string, int>() 
             {
-                public string Name {  get; set; }
-                public int Grade {  get; set; }
-                //public Dictionary<int, string, int> Students = new Dictionary<int, string, int>() Почему нельззя так сделать? Тут ведь должен быть один справочник с именем студента и оценками? Или как то по другому должно быть?
-                //{
-                //    {1, "Иван",  3 },
-                //    {2, "Иван",  5 },
-                //    {3, "Николай",  3 },
-                //    {4, "Николай",  5 }
-                //};
-
-
-            
-            } // Узел списка
-
+                {"Иван",  3 },
+                {"Георгий",  5 },
+                {"Николай",  3 },
+                {"Игорь",  5 }
+            };
             public void TaskLoop()
             {
-                var node1 = new Node() { Name = "Иван", Grade = 3 };
-                var node2 = new Node() { Name = "Иван", Grade = 5 };
-                var node3 = new Node() { Name = "Николай", Grade = 3 };
-                var node4 = new Node() { Name = "Николай", Grade = 5 };
                 int s=0;
                 int grade;
                 Console.WriteLine("Введите имя студента:");
@@ -89,26 +101,30 @@ namespace HomeWork
                     }
                 }
 
-                if (studname == node1.Name)
-                {
-                    s=(node1.Grade+node2.Grade+grade)/3;
-                    Console.WriteLine($"Средняя оценка {studname} : {s}");
-                }
-                if (studname == node3.Name)
-                {
-                    s = (node3.Grade + node4.Grade + grade) / 3;
-                    Console.WriteLine($"Средняя оценка {studname} : {s}");
-                }
-                else
-                {
-                    Console.WriteLine($"Средняя оценка {studname} : {s}");
-                }
+                Console.WriteLine(studname + " " + grade);
+            }
+        }
+        private class ListTask2
+        {
 
-                    Console.WriteLine(studname + " " + grade);
+            private readonly List<string> _list = new List<string>(6);
+            public void TaskLoop()
+            {
+                while (_list.Count!=6)
+                {
+                    Console.Write("\nВведите новую строку для добавления в конец списка: ");
+                    string newItem = Console.ReadLine();
+                    _list.Add(newItem);
+                    for (int i = 0; i < _list.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1}. {_list[i]}");
+                    }
+
+                }
             }
         }
 
-        static void Main(string[] args)
+                static void Main(string[] args)
         {
             Console.WriteLine("Enter 1,2 or 3 to check task 1,2 or 3");
             int task = int.Parse(Console.ReadLine()); // Используйте tryParse
@@ -120,9 +136,9 @@ namespace HomeWork
                 case 2:
                     CheckTaskTwo(); // Выполнение задания в отдельном методе
                     break;
-                //case 3:
-                //    CheckTaskThree(); // Выполнение задания в отдельном методе
-                //    break;
+                case 3:
+                    CheckTaskThree(); // Выполнение задания в отдельном методе
+                    break;
 
             }
         }
@@ -137,11 +153,11 @@ namespace HomeWork
             var linkedListTask = new LinkedListTask();
             linkedListTask.TaskLoop();
         }
-        //private static void CheckTaskThree()
-        //{
-        //    var linkedListTask = new LinkedListTask();
-        //    linkedListTask.TaskLoop();
-        //}
+        private static void CheckTaskThree()
+        {
+            var listTask = new ListTask2();
+                listTask.TaskLoop();
+        }
     }
 }
 
