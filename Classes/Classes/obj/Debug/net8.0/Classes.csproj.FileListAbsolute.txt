@@ -1,0 +1,15 @@
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\bin\Debug\net8.0\Classes.exe
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\bin\Debug\net8.0\Classes.deps.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\bin\Debug\net8.0\Classes.runtimeconfig.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\bin\Debug\net8.0\Classes.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\bin\Debug\net8.0\Classes.pdb
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.AssemblyInfoInputs.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.AssemblyInfo.cs
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.sourcelink.json
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\refint\Classes.dll
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.pdb
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\Classes.genruntimeconfig.cache
+C:\Users\Igork\source\repos\Practic\ShestakovaE_GUN-39_GUNPC\Classes\Classes\obj\Debug\net8.0\ref\Classes.dll
