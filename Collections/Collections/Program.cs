@@ -71,7 +71,7 @@ namespace HomeWork
                 }
             }
         }
-        private class LinkedListTask
+        private class Dictionary
         {
 
             public Dictionary< string, int> Students = new Dictionary<string, int>() 
@@ -93,35 +93,69 @@ namespace HomeWork
                 {
                     if (int.TryParse(inputGrade, out grade) && grade >= 2 && grade <= 5)
                     {
-                        break; 
+                        Students[studname] = grade;
+                        Console.WriteLine(studname + " " + grade);
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("Ошибка: Оценка должна быть числом от 2 до 5.");
                     }
                 }
-
-                Console.WriteLine(studname + " " + grade);
+                Console.WriteLine("Введите имя студента");
+                string input = Console.ReadLine();
+                int gradeFind;
+                
+                if (Students.ContainsKey(input))
+                {
+                    gradeFind = Students[input];
+                    Console.WriteLine(input + " " + gradeFind);
+                }
+                else {
+                    Console.WriteLine("Студент не найден");
+                        }
             }
         }
-        private class ListTask2
+        private class LinkedListTask
         {
 
-            private readonly List<string> _list = new List<string>(6);
+            private readonly List<Node> _list = new List<Node>(6);
             public void TaskLoop()
             {
-                while (_list.Count!=6)
+                Node previous = null;
+                Node next = null;
+                while (_list.Count != 6)
                 {
-                    Console.Write("\nВведите новую строку для добавления в конец списка: ");
-                    string newItem = Console.ReadLine();
-                    _list.Add(newItem);
-                    for (int i = 0; i < _list.Count; i++)
+                    string index = Console.ReadLine();
+                    Node newNode = new Node();
+                    newNode.previous = previous;
+                    if (previous != null)
                     {
-                        Console.WriteLine($"{i + 1}. {_list[i]}");
+                        newNode.next = newNode;
+                        previous = newNode;
                     }
-
+                    Node first = _list[0];
+                    while (first != null)
+                    {
+                        Console.WriteLine(first.Index);
+                        first = first.next;
+                    }
+                    Node last = _list[_list.Count - 1];
+                    while (last != null)
+                    {
+                        Console.WriteLine(last.Index);
+                        last = last.next;
+                    }
                 }
             }
+            public class Node
+            {
+                public Node previous;
+                public Node next;
+                public Node Index;
+            
+            }
+
         }
 
                 static void Main(string[] args)
@@ -150,12 +184,12 @@ namespace HomeWork
         }
         private static void CheckTaskTwo()
         {
-            var linkedListTask = new LinkedListTask();
+            var linkedListTask = new Dictionary();
             linkedListTask.TaskLoop();
         }
         private static void CheckTaskThree()
         {
-            var listTask = new ListTask2();
+            var listTask = new LinkedListTask();
                 listTask.TaskLoop();
         }
     }
