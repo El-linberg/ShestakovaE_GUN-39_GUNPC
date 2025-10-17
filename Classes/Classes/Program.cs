@@ -11,7 +11,7 @@ namespace Classes
 
         public static void Main(string[] args)
         {
-            Dungeon dungeon = new();
+            Dungeon dungeon= new();
         }
 
         public class Unit
@@ -54,7 +54,7 @@ namespace Classes
 
             public string Name { get; }
 
-            public Interval Damage { get; }
+            public Interval Damage { get; private set; }
 
             public float Durability { get; }
 
@@ -71,7 +71,7 @@ namespace Classes
             public void SetDamageParams(int MinDamage, int MaxDamage)
 
             {
-
+                Damage = new Interval();
 
             }
         }
@@ -123,6 +123,8 @@ namespace Classes
             public Weapon weapon;
             public Room(Unit unit, Weapon weapon)
             {
+                this.unit = unit;
+                this.weapon = weapon;
             }
 
 
